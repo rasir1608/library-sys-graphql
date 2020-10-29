@@ -38,6 +38,8 @@
     "start": "egg-scripts start --daemon",
     "stop": "egg-scripts stop",
     "dev": "egg-bin dev",
+    "dev:all":"egg-bin",
+    "dev:web":"cd /web/admin yarn start",
     "test": "egg-bin test",
     "cov": "egg-bin cov",
     "lint": "eslint .",
