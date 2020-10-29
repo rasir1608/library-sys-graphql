@@ -1,0 +1,70 @@
+
+
+input  Users {
+  id:ID
+  empId: String
+  name: String
+  department: String
+  phoneNum: String
+  role: String
+  createdAt:  [Date]
+  updatedAt:  [Date]
+}
+
+
+input  Recoders {
+  status: Int
+  createdAt: [Date]
+  updatedAt:  [Date]
+}
+  
+input  Books {
+  id:ID
+  name: String
+  auth: String
+  identifier: String
+  isbn: String
+  category: String
+  summary: String
+  status: String
+  published_time:  [Date]
+  printed_time:  [Date]
+  created_at:  [Date]
+  updated_at:  [Date]
+}
+
+
+type User {
+  id: ID!
+  name: String!
+}
+
+type UserRecoders {
+  userId:Int
+  userName:String
+  userEmpId:String
+  userDepartment:String
+  userPhoneNum:String
+  userRole:Int
+  userAvatar:String
+  userCreateAt:Date
+  userUpdateAt:Date
+
+  bookId:Int
+  bookName:String
+  bookAuth:String
+  bookIdentifier:String
+  bookIsbn:String
+  bookPublishedTime:Date
+  bookPrintedTime:Date
+  bookCreatedAt:Date
+  bookUpdatedAt:Date
+  bookCategory:String
+  bookSummary:String
+  bookContent:String
+  bookStatus:Int
+  
+  recoderStatus:Int
+  recoderCreatedAt:Date
+  recoderUpdatedAt:Date
+}
