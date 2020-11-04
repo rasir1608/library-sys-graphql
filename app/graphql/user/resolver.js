@@ -2,9 +2,12 @@
 
 module.exports = {
   Query: {
-    userRecoders(root, { user, recoder, book }, ctx) {
+    userRecoders(root, { user, recoder, book, page }, ctx) {
       // return ctx.connector.user.fetchById(id);
-      return ctx.connector.user.queryUserRecoders({ user, recoder, book });
+      return ctx.connector.user.queryUserRecoders({ user, recoder, book, page });
+    },
+    userRecodersCount(root, { user, recoder, book }, ctx) {
+      return ctx.connector.user.countUserRecoders({ user, recoder, book });
     },
     user(root, { id }, ctx) {
       return ctx.connector.user.fetchById(id);

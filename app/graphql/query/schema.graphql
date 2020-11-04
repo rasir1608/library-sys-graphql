@@ -3,5 +3,6 @@
 type Query {
   user(id: ID!): User
   users(ids: [ID!]): [User!]
-  userRecoders(user:Users,recoder:Recoders,book:Books): [UserRecoders!]
+  userRecoders(user:Users,recoder:Recoders,book:Books,page:Page): [UserRecoders!]
+  userRecodersCount(user:Users,recoder:Recoders,book:Books):Int
 }

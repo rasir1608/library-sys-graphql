@@ -28,8 +28,8 @@ module.exports = (app) => {
   }, {
     timestamp: true,
     underscored: true,
-    created_at: 'createdAt',
-    updated_at: 'updatedAt',
+    // created_at: 'createdAt',
+    // updated_at: 'updatedAt',
   });
 
   return User;

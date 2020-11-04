@@ -13,7 +13,7 @@ module.exports = () => {
     proxyworker: {
       port: 10086,
     },
-    middleware: ['graphql'],
+    middleware: ['graphql', 'auth'],
     security: {
       csrf: {
         ignore: () => true,

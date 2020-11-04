@@ -1,2 +1,6 @@
 scalar Date
 
+input Page {
+    offset:Int
+    limit:Int
+}
